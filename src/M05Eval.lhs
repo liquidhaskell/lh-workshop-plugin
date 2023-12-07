@@ -4,8 +4,9 @@
 {-@ LIQUID "--no-termination" @-}
 {-@ LIQUID "--short-names"    @-}
 {-@ LIQUID "--prune-unsorted" @-}
+{-@ LIQUID "--compile-spec"   @-}
 
-module Eval (Map, Expr (..), plus, eval, topEval, safeEval) where
+module M05Eval (Map, Expr (..), plus, eval, topEval, safeEval) where
 
 import Prelude hiding (lookup)
 import qualified Data.Set as S

@@ -17,11 +17,31 @@ clone this repository
 
 **Step 3**
 
+Fire up the LH by running
+
 ```bash
 $ stack build --fast --file-watch
 ```
 
-Then edit the files in `src` to iteratively fix the refinement type errors.
+**Step 4**
+
+Then edit the files in `src` in the order
+
+1. `src/M02Refinements.lhs`
+2. `src/M03DataTypes.lhs`
+3. `src/M04InsertSort.lhs`
+4. `src/M05Eval.lhs`
+5. `src/M06ByteString.lhs`
+
+to first  **delete** the line
+
+```haskell
+{-@ LIQUID "--compile-spec" @-}
+```
+
+which will induce LH to report a bunch of type errors for that module,
+and then iteratively fix the refinement type errors, before moving to the
+next file.
 
 Enjoy!
 

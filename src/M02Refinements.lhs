@@ -4,7 +4,7 @@
 {-@ LIQUID "--no-termination" @-}
 {-@ LIQUID "--no-warnings"    @-}
 {-@ LIQUID "--short-names"    @-}
-{- LIQUID "--compile-spec"    @-}
+{-@ LIQUID "--compile-spec"   @-}
 
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# HLINT ignore "Eta reduce" #-}

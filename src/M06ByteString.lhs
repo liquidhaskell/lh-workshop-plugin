@@ -5,6 +5,8 @@
 {-@ LIQUID "--no-termination" @-}
 {-@ LIQUID "--short-names"    @-}
 {-@ LIQUID "--prune-unsorted" @-}
+{-@ LIQUID "--compile-spec"   @-}
+
 {-# LANGUAGE ForeignFunctionInterface #-}
 
 module M06ByteString where
